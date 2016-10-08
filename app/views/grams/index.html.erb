@@ -1,1 +1,9 @@
 <h1>Grams!</h1>
+
+<%= link_to "New Gram", new_gram_path %>
+
+<% @grams.each do |gram| %>
+
+<h2><%= gram.message %></h2>
+
+<% end %>
