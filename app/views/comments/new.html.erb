@@ -1,0 +1,6 @@
+<h1>Add comment</h1>
+
+<%= simple_form_for @comment do |f| %>
+  <%= f.input :message %>
+  <%= f.submit "Comment", class: "btn btn-primary"  %>
+<% end %>
