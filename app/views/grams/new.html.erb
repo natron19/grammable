@@ -2,5 +2,6 @@
 
 <%= simple_form_for @gram do |f| %>
   <%= f.input :message %>
-  <%= f.submit "Post!" %>
+  <%= f.file_field :picture, :label => "Upload an picture" %>
+  <%= f.submit "Post!", class: "btn btn-primary" %>
 <% end %>

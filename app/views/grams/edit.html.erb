@@ -2,8 +2,10 @@
 
 <%= simple_form_for @gram do |f| %>
   <%= f.input :message %>
-  <%= f.submit "Post!" %>
+  <%= f.file_field :picture, :label => "Upload an picture" %>
+  <%= f.submit "Post!", class: "btn btn-primary"  %>
 <% end %>
 
 <br />
+<hr />
 <%= link_to "Delete Post", gram_path(@gram), method: :delete, data: {confirm: "Are your sure?" }, class: "btn btn-danger" %>

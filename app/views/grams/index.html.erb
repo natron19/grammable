@@ -3,7 +3,9 @@
 <%= link_to "New Gram", new_gram_path %>
 
 <% @grams.each do |gram| %>
-
-<h2><%= link_to gram.message, gram_path(id: gram.id) %></h2>
+<div>
+  <h2><%= link_to gram.message, gram_path(id: gram.id) %></h2>
+  <%= image_tag gram.picture %>
+</div>
 
 <% end %>
