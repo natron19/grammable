@@ -4,3 +4,6 @@
   <%= f.input :message %>
   <%= f.submit "Post!" %>
 <% end %>
+
+<br />
+<%= link_to "Delete Post", gram_path(@gram), method: :delete, data: {confirm: "Are your sure?" }, class: "btn btn-danger" %>

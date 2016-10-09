@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :grams, only: [:new, :create, :show, :edit, :update]
+  resources :grams
 
 end
