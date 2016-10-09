@@ -4,6 +4,6 @@
 
 <% @grams.each do |gram| %>
 
-<h2><%= gram.message %></h2>
+<h2><%= link_to gram.message, gram_path(id: gram.id) %></h2>
 
 <% end %>
